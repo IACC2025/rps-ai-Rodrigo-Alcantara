@@ -1,6 +1,6 @@
 # Documentacion de Recogida de Datos
 
-**Alumno:** ___________________
+**Alumno:** _Rodrigo Vladimir Alcántara Gutierrez__
 
 ## Formato del CSV
 
@@ -34,13 +34,14 @@ Marca con [x] el metodo usado y describe brevemente:
 - [ ] **Programa propio**: Cree un programa para jugar y guardar datos
 - [ ] **Manual**: Jugue partidas y apunte los resultados a mano
 - [ ] **Aplicacion/Web externa**: Use una app y exporte los datos
-- [ ] **Otro**: _________________
-
+- [X] **Otro**: _Guarda los datos internamente segun se va jugando la partida_
 ### Descripcion del proceso:
 
 ```
-(Explica aqui como recogiste los datos. Si usaste un programa,
-describe brevemente como funciona. Si fue manual, explica el proceso.)
+Los datos en los que se basa es en un modelo que se llama "Cadena de Markov" el cuál lee
+la/s jugadas anteriores para poder predecir la siguiente jugada de la persona y que tengas 
+más probabilidades de ganar, guardando en una tabla "mental" las jugadas que ha ido haciendo
+el jugador.  
 
 
 
@@ -55,13 +56,16 @@ Si capturaste datos extra ademas de los basicos, marcalos aqui:
 - [ ] `tiempo_reaccion_ms` - Tiempo que tardo el jugador en responder
 - [ ] `timestamp` - Fecha/hora de cada jugada
 - [ ] `sesion` - ID de sesion de juego
-- [ ] `resultado` - victoria/derrota/empate
-- [ ] Otro: _________________
+- [X] `resultado` - victoria/derrota/empate
+- [X] Otro: El número de ronda en el que están, tu jugada, la jugada de la IA y su eficiencia,
+además del número total de victorias, derrotas y empates de la IA.
 
 ### Descripcion de datos adicionales:
 
 ```
-(Si capturaste datos extra, explica aqui por que y como los usas)
+Capturo estos datos para que la persona que juega sepa en que ronda se encuentra,
+además de tener un cálculo para saber cuantas veces ha ganado la IA, además de al final
+del total de partidas darte un porcetaje con la eficiencia de la IA.
 
 
 ```
@@ -70,12 +74,12 @@ Si capturaste datos extra ademas de los basicos, marcalos aqui:
 
 ## Estadisticas del dataset
 
-- **Total de rondas:** _____
-- **Numero de sesiones/partidas:** _____
-- **Contra cuantas personas diferentes:** _____
+- **Total de rondas:** __50__
+- **Numero de sesiones/partidas:** __25__
+- **Contra cuantas personas diferentes:** __1__
 
 ### Tipo de IA:
 
 - [ ] **IA Especifica**: Entrenada para ganar a UNA persona concreta
   - Nombre/identificador del oponente: _________________
-- [ ] **IA General**: Entrenada para ganar a cualquier oponente
+- [X] **IA General**: Entrenada para ganar a cualquier oponente
